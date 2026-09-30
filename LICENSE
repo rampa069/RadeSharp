@@ -1,0 +1,9 @@
+RadeSharp is distributed under the licenses of the code it ports:
+
+  src/RadeSharp        BSD-2-Clause (rade_c, rade_text, Zeus shim) and BSD-3-Clause (Opus)
+  src/RadeSharp.Text   LGPL-2.1-or-later (contains codec2-derived code)
+  tools, tests, reference, scripts   BSD-2-Clause
+
+See NOTICE.md for copyright holders, LICENSE.rade_c for the rade_c license text.
+LICENSE.opus holds the Opus BSD-3-Clause text; LGPL-2.1 is at
+https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html

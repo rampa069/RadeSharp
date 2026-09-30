@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>RadeSharp.Text</RootNamespace>
+    <Description>FreeDV RADE End-of-Over reliable text (callsign) codec: CRC8 + 6-bit charset + LDPC HRA_56_56 + Golden Prime interleaver. Contains codec2-derived code under LGPL-2.1; kept in its own assembly so the core library stays BSD.</Description>
+    <PackageLicenseExpression>LGPL-2.1-or-later</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RadeSharp\RadeSharp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="RadeSharp.Tests" />
+  </ItemGroup>
+
+</Project>
