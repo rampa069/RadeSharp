@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "radecs",
+  "project_id": "45d2abc5-b959-4c25-982e-1f0d64e7d8e1"
+}
