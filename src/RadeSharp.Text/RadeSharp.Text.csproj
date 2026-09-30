@@ -1,6 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <!-- DSP/neural code: always JIT-optimized, even in Debug builds of the host
+         (unoptimized it runs ~8x slower, too slow for real time in V1 acquisition).
+         Optimization never changes results: no FMA contraction or reassociation. -->
+    <Optimize>true</Optimize>
     <RootNamespace>RadeSharp.Text</RootNamespace>
     <Description>FreeDV RADE End-of-Over reliable text (callsign) codec: CRC8 + 6-bit charset + LDPC HRA_56_56 + Golden Prime interleaver. Contains codec2-derived code under LGPL-2.1; kept in its own assembly so the core library stays BSD.</Description>
     <PackageLicenseExpression>LGPL-2.1-or-later</PackageLicenseExpression>

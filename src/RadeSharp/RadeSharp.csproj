@@ -1,6 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <!-- DSP/neural code: always JIT-optimized, even in Debug builds of the host
+         (unoptimized it runs ~8x slower, too slow for real time in V1 acquisition).
+         Optimization never changes results: no FMA contraction or reassociation. -->
+    <Optimize>true</Optimize>
     <RootNamespace>RadeSharp</RootNamespace>
     <Description>Managed C# port of rade_c (FreeDV Radio Autoencoder, RADE V1/V2) with the Opus FARGAN vocoder and LPCNet feature analysis.</Description>
   </PropertyGroup>
